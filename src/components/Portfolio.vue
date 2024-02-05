@@ -9,8 +9,8 @@
                 </div>
             </div>
 
-            <div class="w-full px-4 flex flex-wrap justify-center">
-                    <Card  :img="img" v-for="img in images"/>
+            <div class="w-full px-4 flex flex-wrap">
+                <Card  :img="img" v-for="img in images"/>
             </div>
         </div>
     </section>
@@ -18,7 +18,6 @@
 
 <script>
     import Card from './Card.vue';
-    import Foto from '../assets/foto.png';
 
     export default {
         components: {
@@ -28,25 +27,25 @@
             return {
                 images: [
                     {
-                        source: '5sets/poto.png',
+                        source: 'src/assets/foto.png',
                         alt: 'title 1',
                         title: 'Titile 1',
                         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ipsum in perspiciatis?'
                     },
                     {
-                        source: Foto,
+                        source: 'src/assets/foto.png',
                         alt: 'title 2',
                         title: 'Titile 2',
                         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ipsum in perspiciatis?'
                     },
                     {
-                        source: Foto,
+                        source: 'src/assets/foto.png',
                         alt: 'title 3',
                         title: 'Titile 3',
                         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ipsum in perspiciatis?'
                     },
                     {
-                        source: Foto,
+                        source: 'src/assets/foto.png',
                         alt: 'title 4',
                         title: 'Titile 4',
                         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ipsum in perspiciatis?'

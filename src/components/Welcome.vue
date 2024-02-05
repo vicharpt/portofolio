@@ -1,16 +1,16 @@
 <template>
     <section id="home" class="pt-36 md:pt-24">
         <div class="container">
-            <div class="flex flex-wrap">
+            <div class="flex flex-wrap overflow-hidden">
                 <div class="max-w-full self-center px-4 md:w-1/2">
                     <h1 class="text-base font-semibold text-primary md:text-xl mb-1">Hallo Semua 👋, saya <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl">Indra Saputra</span></h1>
                     <h2 class="font-medium text-secondary text-lg mb-5 lg:text-xl">Web Developer</h2>
                     <p class="font-medium text-secondary mb-10 leading-relaxed">Saya sedang belajar menjadi seorang <span class="text-dark">web developer</span></p>
                     <!-- <p class="font-medium text-secondary leading-relaxed mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, temporibus velit! Voluptatibus distinctio, provident cupiditate repudiandae facilis impedit iusto quos.</p> -->
 
-                    <a href="" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi saya</a>
+                    <a target="_blank" :href="whatsapp" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi saya</a>
                 </div>
-                <div class="max-w-full self-end px-4 md:w-1/2 overflow-hidden md:overflow-visible">
+                <div class="max-w-full self-end px-4 md:w-1/2">
                     <div class="relative mt-10 lg:mt-0 lg:right-0 text-primary">
                         <img :src="foto" alt="Indra Saputra" class="max-w-full mx-auto" />
                         <span class="absolute bottom-4 -z-10 left-1/2 -translate-x-[60%] md:-translate-x-1/2 md:scale-125 w-full">
@@ -30,7 +30,8 @@
     export default {
         data() {
             return {
-                foto: foto
+                foto: foto,
+                whatsapp: 'https://api.whatsapp.com/send?phone=+6285791701190'
             }
         }
     }

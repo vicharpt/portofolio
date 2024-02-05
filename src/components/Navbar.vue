@@ -3,7 +3,7 @@
     <div class="container">
       <div class="flex items-center justify-between relative">
         <div class="px-4">
-          <a :href="navLink[0].link" class="font-bold text-md text-primary block py-6">IndraSaputra</a>
+          <a href="" class="font-bold text-md text-primary block py-6">IndraSaputra</a>
         </div>
         <div class="flex items-center px-4">
           <button :class="'block absolute right-4 md:hidden ' + hamburgerActive" @click="handleToggle">
